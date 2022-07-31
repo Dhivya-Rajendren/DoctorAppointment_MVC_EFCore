@@ -1,0 +1,14 @@
+﻿@model DoctorAppointment_MVC_EFCore.Models.Appointment
+
+<form asp-action="MakeAppointment" method=post>
+<div  style="margin-left:50px;margin-top:50px">
+
+    <input class="form-control" asp-for=PatientId placeholder="Enter the PatientId"/>
+    <input class="form-control m-2" asp-for=AppointmentDate />
+    <input class="form-control m-2" asp-for=AppointmentTime/>
+    <input class="form-control m-2" asp-for=AppointmentStatus/>
+
+    <input type="submit" class="btn btn-primary m-5" value="Make Appointment"/>
+
+</div>
+</form>
